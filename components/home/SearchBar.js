@@ -8,7 +8,7 @@ export default function SearchBar({ cityHandler }) {
   return (
     <View style={{ marginTop: 15, flexDirection: "row" }}>
       <GooglePlacesAutocomplete
-        query={{ key: "AIzaSyATiAqIXBARofRD2apZcPQ1eEWZPH4fPV4" }}
+        query={{ key: "AIzaSyChm1BnRmp3XrDlygg5mkj143whUumcUP8" }}
         onPress={(data, details = null) => {
           const city = data.description.split(",")[0];
           cityHandler(city);
